@@ -23,7 +23,7 @@ const openai = new OpenAIApi(configuration);
 
 
 
-const port = process.env.PORT ;
+const port = process.env.PORT || 3080 ;
 
 app.post('/', async (req,res)=>{
     const {person,topic} = req.body;
